@@ -105,11 +105,11 @@ resource "aws_security_group" "allow_all" {
 
 terraform.tf
 terraform {
- backend “s3” {
+ backend "s3" {
  encrypt = true
  bucket = "terraform-backend-storage-s3"
- region = us-east-1
- key = terraform.tfstate
+ region = "us-east-1"
+ key = "terraform.tfstate"
  }
 }
 
