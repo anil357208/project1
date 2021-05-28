@@ -103,7 +103,7 @@ resource "aws_security_group" "allow_all" {
 }
 
 
-terraform.tf
+
 terraform {
  backend "s3" {
  encrypt = true
